@@ -1,0 +1,76 @@
+{% extends 'mainsite/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mkoolima | Log in to your account</title>
+    li
+</head>
+<body>
+    <h1>Mkoolima</h1>
+    
+
+    {% block content %}
+
+    <h2 class="text-center welcome-text">Welcome back to Mkoolima</h2>
+
+    <p class="or-text">or</p>
+    
+    <section class="main-form-div">
+
+    <div class="container add-margins">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+                <form action="#" onclick="javascript: event.preventDefault" class="mkoolimaform">
+                    <h2>Sign in</h2>
+                    
+                    <label for="username">Username</label>
+                    <div class="m-input-group d-flex justify-content-center">
+                        <input type="text" name="username">
+                    </div>
+                    
+                    <label for="password">Password</label>
+                    <div class="m-input-group d-flex justify-content-center">
+                        <input type="text" name="password">
+                    </div>
+
+                    <div class="m-input-group d-flex justify-content-center">
+                        <p class="forgot-pass"><a href="#">Forgot password?</a></p>
+                    </div>
+                    <div class="m-input-group d-flex justify-content-center">
+                        <input type="submit" value="Submit" name="submit">
+                    </div>
+                </form>
+            </div>
+            
+            
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="quickbtn-holder">
+                    <button class="quickbtn google">
+                        <img src="{% static 'mainsite/assets/img/Google plus.png' %}" alt="">
+                        Sign in with Google
+                    </button>
+                    <button class="quickbtn facebook">
+                        <img src="{% static 'mainsite/assets/img/Component 1.png' %}" alt="">
+                        Sign in with Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+        <!-- images -->
+        <img class="bottom-pic" src="{% static 'mainsite/assets/img/Component 6 – 1.png' %}">
+        <img class="bottom-right-pic" src="{% static 'mainsite/assets/img/Component 6 – 1.png' %}"> 
+        <img class="top-right-pic" src="{% static 'mainsite/assets/img/Component 6 – 1.png' %}" alt="">
+    </section>
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+@font-face {
+  font-family: mont-bold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: mont-regular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+.scroll-down-ux{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.scroll-down-ux p{
+    color: #fff;
+}
+
+.scroll-down-ux img{
+    width: 30px;
+}
+
+.hero-image{
+    width: 450px;
+}
+
+.big-font{
+    font-size: 40px !important;
+}
+
+.less-bigger-font{
+    font-weight: bold;
+    font-size: 20px !important;
+}
+
+.hero-title{
+    font-family: mont-bold;
+    font-size: 30px;
+    color: #707070;
+}
+
+.normal-text{
+    font-family: mont-regular;
+    font-size: 18px;
+    color: #707070;
+}
+
+.logo{
+    width: 300px !important;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.nav-item a{
+    color: #000;
+}
+
+.nav-item a .mkoolima-focus-btn{
+    color: #fff !important;
+}
+
+.mkoolima-focus-btn{
+    background: #5A9A1F;
+    text-decoration: none !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.mkoolima-cta{
+    background: #5A9A1F;
+    color: #fff;
+    width: auto;
+    padding: 10px 30px;
+    height: auto;
+    border-color: #5A9A1F !important;
+}
+
+.mkoolima-cta:hover{
+    background: #4f8819;
+}
+
+.push-to-top{
+    position: absolute;
+    top: -100px !important;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.waves{
+    position: relative;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    /* background: yellow; */
+}
+
+.flex-item-left{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.flex-item-right{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.feature{
+    /* background: rgb(116, 38, 38, .9); */
+    width: 400px;
+    height: 250px;
+}
+
+.feature .feature-bubble{
+    position: relative;
+    right: 0px;
+    border: none;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: rgb(139,173,108, .25);
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    /* position: absolute; */
+    position: absolute;
+    left: -120px;
+    top: 50px;
+    /* background: #5A9A1F; */
+    z-index: -1;
+}
+
+.image2{
+    position: absolute;
+    left: -180px;
+    top: 50px;
+    /* background: #5A9A1F; */
+    z-index: -1;
+
+}
+
+.image .illust{
+    width: 350px !important;
+}
+
+.image2 .illust{
+    width: 350px !important;
+}
+.reduce-img-height{
+    top: -300px !important;
+    width: 350px !important;
+    height: auto !important;
+}
+
+.content{
+    position: absolute;
+    right:30px;
+    /* background: #f00; */
+    width: 200px;
+    z-index: 2;
+
+}
+
+
+.debug{
+    outline: 1px solid red;
+}
+
+.weather{
+    background: rgb(53,169,219, .25) !important;
+}
+
+.news{
+    background:rgb(250,117,241, .25) !important;
+}
+
+.smart{
+    background: rgb(173,98,0, .25) !important;
+}
+
+/* footer */
+.border-top-orange{
+    border-top: 3px solid !important;
+    border-color: #FF7800 !important;
+}
+
+.footer-logo{
+    width: 170px;
+}
+
+.address{
+    width: 150px;
+    font-size: 16px;
+    color: #707070;
+    font-family: mont-regular;
+}
+
+.footer h1{
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer .list li{
+    list-style: none;
+    text-align: center;
+}
+
+.footer .list li a{
+    color: #707070 !important;
+}
+
+.tel a{
+    text-decoration: none;
+    color: #707070 !important;
+}
+
+.socials li{
+    list-style: none;
+    float: left;
+}
+
+.socials li img{
+    margin-right: 20px;
+    height: 25px;
+}
+
+/* login page */
+.add-margins{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.or-text{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #707070 !important;
+    text-transform: uppercase;
+    /* background-color: yellow; */
+    z-index: 2;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-text{
+    color: #707070;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mkoolimaform{
+    position: relative;
+    padding: 10px;
+    background: #FF7800;
+    width: 350px !important;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.mkoolimaform h2{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mkoolimaform .m-input-group{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mkoolimaform .m-input-group input[type='text']{
+    border-radius: 20px;
+    width: 80%;
+    padding-left: 20px;
+    background: #fff;
+    border: none;
+}
+
+.mkoolimaform .m-input-group input:focus{
+    outline: none;
+}
+
+.mkoolimaform label{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.mkoolimaform .m-input-group input[type='submit']{
+    background: #5A9A1F;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 40px;
+}
+
+.forgot-pass{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-size: 14px;
+}
+
+.forgot-pass a{
+    /* color: #2699FB; */
+    margin-right: 40px; 
+}
+
+.quickbtn-holder{
+    position: relative;
+    width: 380px;
+    height: auto;
+    padding: 10px;
+}
+
+.quickbtn{
+    position: relative;
+    width: 350px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.quickbtn img{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    height: 15px;
+}
+
+.google{
+    border-color: #DB3236;
+    background: #fff;
+    color: #DB3236;
+}
+
+.facebook{
+    border-color: #4267B2;
+    background: #4267B2;
+    color: #fff;
+}
+
+.bottom-pic{
+    position: absolute;
+    bottom: -100px;
+    right: 450px;
+    width: 300px;
+}
+
+.main-form-div{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+.debug{
+    outline: 1px solid red;
+}
+
+.bottom-right-pic, .top-right-pic{
+    position: absolute;
+}
+
+.bottom-right-pic{
+    width: 300px;
+    bottom: -100px;
+    right: -125px;
+    transform: rotate(-135deg);
+}
+
+.top-right-pic{
+    width: 125px;
+    top: 5px;
+    right: 45px;
+    transform: rotate(-135deg);
+}

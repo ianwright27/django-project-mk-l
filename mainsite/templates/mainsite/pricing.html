@@ -1,0 +1,145 @@
+{% extends 'mainsite/base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+
+<html>
+<head>
+    <title>Kright Technologies</title>
+{# bootstrap css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}bootstrap/css/bootstrap.min.css">
+{# fontawesome css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}fontawesome/css/all.min.css">
+{#    main.css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/css/' %}main.css">
+</head>
+<body>
+
+{% block content %}
+<section class="" id="hero">
+
+{% block navbar-sticky-primary %}{% endblock %}
+{% block navbar-main-primary %}{% endblock %}
+
+    <div class="container kright-regular-font">
+        <div class="row d-flex justify-content-center" class="text-center">
+            <div class="col-md-8 mt-5 text-center">
+                <h1 class="kright-blue-text text-center kright-bold-font">Pricing Plans</h1>
+                <p class="kright-blue-text ml-auto">Here is a list of all services we offer and the prices for each package. There </p>
+            </div>
+        </div>
+
+
+    <div class="container mt-5 add-margin-top-more mb-5 pb-0 bg-white">
+
+      <div class="row card-deck text-center">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <div class="circle-title borders shine-me pricing-bronze">Bronze</div>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="pricing-card-features">
+            <h1 class="card-title border-bottom pb-3 pricing-card-title">$150 <!-- <small class="text-muted">/ mo</small> --></h1>
+                        <ul class="list-unstyled mt-3 mb-2 border-bottom pb-3">
+                          <li>10 users included</li>
+                          <li>2 GB of storage</li>
+                          <li>Email support</li>
+                          <li>Help center access</li>
+                          <li class="kright-orange-text font-weight-bold">Photography included</li>
+                        </ul>               
+                    </div>
+                    <div class="pricing-card-button">
+                        <button class="btn kright-cta-focus-pricing-invert border-radius pl-4 pr-4 btn-primary mt-2">
+                            <small class="font-weight-bold">Proceed</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <div class="circle-title borders shine-me pricing-silver">Silver</div>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="pricing-card-features">
+            <h1 class="card-title border-bottom pb-3 pricing-card-title">$360 <!-- <small class="text-muted">/ mo</small> --></h1>
+                        <ul class="list-unstyled mt-3 mb-2 border-bottom pb-3">
+                          <li>30 users included</li>
+                          <li>15 GB of storage</li>
+                          <li>Phone and email support</li>
+                          <li>Help center access</li>
+                          <li class="kright-orange-text font-weight-bold">Photography included</li>
+                        </ul>               
+                    </div>
+                    <div class="pricing-card-button">
+                        <button class="btn kright-cta-focus-pricing-invert border-radius pl-4 pr-4 btn-primary mt-2">
+                            <small class="font-weight-bold">Proceed</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .pricing-card{
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+                .pricing-card-header{
+                    height: 100px;
+                }
+                .pricing-card-body{
+                    padding-bottom: 20px;
+                }
+            </style>
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <div class="circle-title borders pricing-gold shine-me ">Gold</div>
+                </div>
+                <div class="pricing-card-body">
+                    <div class="pricing-card-features">
+            <h1 class="card-title border-bottom pb-3 pricing-card-title">$560 <!-- <small class="text-muted">/ mo</small> --></h1>
+                        <ul class="list-unstyled mt-3 mb-2 border-bottom pb-3">
+                          <li>30 users included</li>
+                          <li>15 GB of storage</li>
+                          <li>Phone and email support</li>
+                          <li>Help center access</li>
+                          <li class="kright-orange-text font-weight-bold">Photography included</li>
+                        </ul>               
+                    </div>
+                    <div class="pricing-card-button">
+                        <button class="btn kright-cta-focus-pricing-invert border-radius pl-4 pr-4 btn-primary mt-2">
+                            <small class="font-weight-bold">Proceed</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="container kright-regular-font mb-5">
+        <div class="row d-flex justify-content-center" class="text-center">
+            <div class="col-md-8 mt-2 text-center">
+                <h1 class="kright-blue-text text-center kright-bold-font font-size-auto-bold">Customize your package</h1>
+                <p class="kright-blue-text ml-auto">Are you looking for something different? </p>
+            </div>
+        </div>
+</section>
+{% endblock%}
+
+</body>
+</html>
+
+<script src="{% static 'mainsite/assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'mainsite/assets/js/main.js' %}"></script>

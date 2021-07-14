@@ -1,0 +1,125 @@
+{% load static %}
+
+<html>
+<head>
+{# bootstrap css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}bootstrap/css/bootstrap.min.css">
+{# fontawesome css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}fontawesome/css/all.min.css">
+{#    main.css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/css/' %}main.css">
+
+    <title>Mkoolima</title>
+    <link rel="icon" type="image/png" sizes="460x460"  href="{% static 'mainsite/assets/img/' %}/favicon.png">
+{#    <link rel="manifest" href="{% static 'mainsite/assets/img/favicon' %}/manifest.json">#}
+{#    <meta name="msapplication-TileColor" content="#ffffff">#}
+{#    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">#}
+    <meta name="theme-color" content="#05386B">
+    <meta name="viewport" content="width=device-width, initial-scale=.77">
+</head>
+<body>
+
+
+
+{% block navbar-sticky-secondary %}
+{% endblock %}
+
+{% block navbar-main-secondary %} 
+{% endblock %}
+
+{% block navbar-main-primary %}
+<nav class="navbar navbar-expand-md navbar-expand-lg navbar-light transparent-bg">
+    <a class="navbar-brand ml-5" href="/">
+          <img class="logo" src="{% static 'mainsite/assets/img/mkoolima-logo.png' %}" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-center kright-regular-font navbar-font">
+        <li class="nav-item active">
+          <a class="nav-link text-dark mx-auto mx-sm-auto mx-md-auto mx-lg-0" href="">About Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark mx-auto mx-sm-auto mx-md-auto mx-lg-0" href="">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark mx-auto mx-sm-auto mx-md-auto mx-lg-0" href="">Sign In</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white mx-auto mx-sm-auto mx-md-auto mx-lg-0 mkoolima-focus-btn" href="">Sign Up</a>
+          </li>
+      </ul>
+
+    </div>
+  </nav> 
+  {% endblock %}
+  
+
+
+{% block content %}
+
+{% endblock %}
+
+<!-- footer is always same -->
+<div class="container-fluid border-top-orange">
+  <div class="row footer mt-5 pt-2 pb-5">
+    <div class="col-md-3 d-flex justify-content-center">
+      
+      <div class="cont">
+        <img class="footer-logo" src="{% static 'mainsite/assets/img/mkoolima-logo.png' %}" alt="">
+        <p class="address">P.O. Box 69,
+          GPO, Nairobi,
+          Kenya.</p>
+          <p>
+            <a href="mailto:info@mkoolima.com">info@mkoolima.com</a>
+          </p>
+          
+        <p class="tel">
+          <a href="tel:0740428707">+254 740 428 707</a>
+        </p>
+        <div class="socials">
+          <li><img class="social-img" src="{% static 'mainsite/assets/img/Facebook.png' %}" alt=""></li>
+          <li><img class="social-img" src="{% static 'mainsite/assets/img/Instagram.png' %}" alt=""></li>
+          <li><img class="social-img" src="{% static 'mainsite/assets/img/Path 2.png' %}" alt=""></li>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <h1>About</h1>
+      <div class="list">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Careers</a></li>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h1>Features</h1>
+      <div class="list">
+        <li><a href="#">Inventory management</a></li>
+        <li><a href="#">Weather forecast</a></li>
+        <li><a href="#">Smart pest and disease recognition</a></li>
+        <li><a href="#">News</a></li>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h1>Help</h1>
+      <div class="list">
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">FAQ</a></li>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+<script src="{% static 'mainsite/assets/vendor/jquery-slim/jquery-3.2.1.slim.min.js' %}"></script>
+<script src="{% static 'mainsite/assets/vendor/popper/popper.min.js' %}"></script>
+<script src="{% static 'mainsite/assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'mainsite/assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'mainsite/assets/js/main.js' %}"></script>

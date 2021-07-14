@@ -1,0 +1,99 @@
+{% extends 'mainsite/base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+
+<html>
+<head>
+    <title>Kright Technologies</title>
+{# bootstrap css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}bootstrap/css/bootstrap.min.css">
+{# fontawesome css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/vendor/' %}fontawesome/css/all.min.css">
+{#    main.css #}
+    <link rel="stylesheet" href="{% static 'mainsite/assets/css/' %}main.css">
+</head>
+<body>
+
+{% block content %}
+<section class="" id="hero">
+
+{% block navbar-sticky-primary %}{% endblock %}
+{% block navbar-main-primary %}{% endblock %}
+
+    <div class="container kright-regular-font">
+        <div class="row d-flex justify-content-center" class="text-center">
+            <div class="col-md-8 text-center">
+                <h1 class="kright-blue-text text-center kright-bold-font">Get in touch.</h1>
+                <p class="kright-blue-text ml-auto">Have any questions? We are here for whatever you need.</p>
+            </div>
+        </div>
+          <div class="row mt-5">
+              <!-- Section Titile -->
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h3 class="font-size-auto-bold">Love to Hear From You</h3>
+              </div>
+          </div>
+          <div class="row mb-5">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <p>You have a brand new idea or an already existing brand. <b>Life</b> could just be the thing your brand needs.  Or if it's just a query you have, just feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.</p>
+                <div class="find-widget">
+                 Company:  <a class="kright-blue-text" href="https://kright.tech">Kright Technologies</a>
+                </div>
+                <div class="find-widget">
+                 Located in: <a class="kright-blue-text" href="#">Nairobi, Kenya</a>
+                </div>
+                <div class="find-widget">
+                  Phone:  <a class="kright-blue-text" href="#">0791387095 / 0793981524</a>
+                </div>
+
+                <div class="find-widget">
+                  Website:  <a class="kright-blue-text" href="https://kright.tech">www.kright.tech</a>
+                </div>
+                <div class="find-widget">
+                   Available: <a class="kright-blue-text" href="#">Mon to Sat: 08:30 AM - 10.30 PM</a>
+                </div>
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6 wow animated fadeInRight mt-sm-5 mt-md-0" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <h4 class="mb-3">Talk to us</h4>
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-common kright-cta-focus-pricing" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+</section>
+{% endblock %}
+
+</body>
+</html>

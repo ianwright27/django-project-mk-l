@@ -1,0 +1,122 @@
+{% extends 'mainsite/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mkoolima</title>
+    li
+</head>
+<body>
+    <h1>Mkoolima</h1>
+
+    
+
+    {% block content %}
+
+    <div class="scroll-down-ux text-center">
+        <p>Scroll down</p>
+        <img src="{% static 'mainsite/assets/img/Path 10.png' %}" alt="">
+    </div>
+    
+    <div class="container mt-5 pt-5 mb-5 pb-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="hero-title big-font">Revolutionizing farming</h1>
+                <p class="normal-text">Mkoolima is an app that brings modern farming techniques to you from anywhere in Kenya. Find out all the latest news, weather forecasts, pest and disease recognition using our state of the art AI technology and much more.</p>
+                <div class="cta-container d-flex justify-content-center">
+                    <button class="btn btn-primary mkoolima-cta less-bigger-font">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="hero-image" src="{% static 'mainsite/assets/img/undraw_dreamer_gxxi.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="waves">
+        <section class="push-to-top">
+            <div class="row">
+                <div class="col-md-12">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 190" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(90, 154, 31, 1)" offset="0%"></stop><stop stop-color="rgba(90, 154, 31, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,57L30,50.7C60,44,120,32,180,25.3C240,19,300,19,360,28.5C420,38,480,57,540,53.8C600,51,660,25,720,12.7C780,0,840,0,900,25.3C960,51,1020,101,1080,110.8C1140,120,1200,89,1260,91.8C1320,95,1380,133,1440,152C1500,171,1560,171,1620,142.5C1680,114,1740,57,1800,41.2C1860,25,1920,51,1980,53.8C2040,57,2100,38,2160,25.3C2220,13,2280,6,2340,12.7C2400,19,2460,38,2520,63.3C2580,89,2640,120,2700,136.2C2760,152,2820,152,2880,155.2C2940,158,3000,165,3060,139.3C3120,114,3180,57,3240,47.5C3300,38,3360,76,3420,79.2C3480,82,3540,51,3600,34.8C3660,19,3720,19,3780,15.8C3840,13,3900,6,3960,12.7C4020,19,4080,38,4140,47.5C4200,57,4260,57,4290,57L4320,57L4320,190L4290,190C4260,190,4200,190,4140,190C4080,190,4020,190,3960,190C3900,190,3840,190,3780,190C3720,190,3660,190,3600,190C3540,190,3480,190,3420,190C3360,190,3300,190,3240,190C3180,190,3120,190,3060,190C3000,190,2940,190,2880,190C2820,190,2760,190,2700,190C2640,190,2580,190,2520,190C2460,190,2400,190,2340,190C2280,190,2220,190,2160,190C2100,190,2040,190,1980,190C1920,190,1860,190,1800,190C1740,190,1680,190,1620,190C1560,190,1500,190,1440,190C1380,190,1320,190,1260,190C1200,190,1140,190,1080,190C1020,190,960,190,900,190C840,190,780,190,720,190C660,190,600,190,540,190C480,190,420,190,360,190C300,190,240,190,180,190C120,190,60,190,30,190L0,190Z"></path></svg>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="conatiner">
+        <h1 class="hero-title text-center mb-5">Our features</h1>
+
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="feature">
+                    <div class="feature-bubble">
+                        <div class="image">
+                            <img class="illust" src="{% static 'mainsite/assets/img/undraw_Spreadsheet_re_cn18.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Inventory management</h3>
+                            <p>We help you keep track of your farming equipment, material and produce.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-around">
+                <div class="feature"> 
+                    <div class="feature-bubble weather">
+                        <div class="image2">
+                            <img class="illust" src="{% static 'mainsite/assets/img/undraw_Weather_re_qsmd.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Weather forecast</h3>
+                            <p>Get accurate short-term and long-term weather reports for all 47 counties across Kenya</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 pb-5">
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="feature">
+                    <div class="feature-bubble smart">
+                        <div class="image">
+                            <img class="illust reduce-img-height" src="{% static 'mainsite/assets/img/undraw_the_search_s0xf.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Smart pest and disease recognition</h3>
+                            <p>Quickly and accurately identify pests and diseases in animals and crops.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-around">
+                <div class="feature"> 
+                    <div class="feature-bubble news">
+                        <div class="image2">
+                            <img class="illust reduce-img-height " src="{% static 'mainsite/assets/img/undraw_share_online_r87b.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>News</h3>
+                            <p>Get latest news on pest and disease outbreaks, best farming practices and insights from fellow farmers across the world.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>
